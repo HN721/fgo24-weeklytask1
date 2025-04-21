@@ -17,6 +17,6 @@ const product = {
     color: "black",
     option: ["M", "L", "XL", "XXL"],
   },
-  name:"Kemeja Murah cuy"
+  name:"Kemeja Murah cuy",
   shortName: "Kemeja",
 };
