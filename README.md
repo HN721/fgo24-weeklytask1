@@ -51,7 +51,7 @@ flowchart TD
     B@{shape: lean-r, label: "Input Kalimat"  }
     C@{shape: rectangle, label: "Pecah kalimat menjadi array kata-kata menggunakan pemisah spasi"}
     D@{shape:rectangle, label: "Balik Urutan Array Kata"}
-    E@{shape:rectangle , label: "Gabungkan Kata Menjadi Kalimat"}
+    E@{shape:rectangle , label: "Gabungkan kembali array menjadi string"}
     F@{shape: lean-r , label: "Cetak Kalimat"}
     G@{shape: dbl-circ , label: "Selesai"}
 
