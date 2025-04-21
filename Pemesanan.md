@@ -9,7 +9,7 @@ flowchart TD
     D3@{shape: rectangle, label: "Snack"}
     D4@{shape: rectangle, label: "Lihat Keranjang"}
     D5@{shape: rectangle, label: "Checkout dan Selesai"}
-    D6@{shape: rectangle, label: "❌ Pilihan Tidak Valid"}
+    D6@{shape: rectangle, label: " Pilihan Tidak Valid"}
    E1@{shape:rectangle, label: "Menampilkan daftar makanan"}
    E2@{shape:rectangle, label: "Menampilkan daftar Minuman"}
    E3@{shape:rectangle, label: "Menampilkan daftar Snack"}
@@ -19,9 +19,9 @@ flowchart TD
    H@{shape: rectangle, label: "Tambahkan ke keranjang"}
    I@{shape: rectangle, label: "Tampilkan keranjang" }
    J@{shape : diamond, label: "Apakah keranjang kosong?"}
-   K@{shape : rectangle ,label: "⚠️ Keranjang kosong"}
+   K@{shape : rectangle ,label: " Keranjang kosong"}
    L@{shape : lean-r , label : "Tampilkan keranjang & total" }
-   M@{shape: dbl-circ, label: "✅ Selesai & Tutup Aplikasi"}
+   M@{shape: dbl-circ, label: " Selesai & "}
     A --> B
     B --> C
     C --> D1
