@@ -48,7 +48,7 @@ F --> G
 ```mermaid
 flowchart TD
     A@{shape: circle,label: "Mulai"}
-    B@{shape:lean-r, label: "Input Kalimat"  }
+    B@{shape: lean-r, label: "Input Kalimat"  }
     C@{shape: rectangle, label: "Ubah Kalimat Menjadi Array Kata"}
     D@{shape:rectangle, label: "Balik Urutan Array Kata"}
     E@{shape:rectangle , label: "Gabungkan Kata Menjadi Kalimat"}
