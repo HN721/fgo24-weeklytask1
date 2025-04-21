@@ -1,4 +1,8 @@
 const printSquare = (num) => {
+  if(typeof num !== "number"){
+    console.log("Input Harus Bertipe angka")
+    return
+  }
   for (let i = 1; i <= num; i++) {
     let line = "";
     for (let j = 1; j <= num; j++) {
