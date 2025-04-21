@@ -16,7 +16,8 @@
 flowchart TD
 
 A@{shape: circle , label: "Mulai"}
-B@{shape: lean-r, label: "Kalimat === 'string'?"}
+X@{shape: lean-r , label: "Input Kalimat"}
+B@{shape: diamond, label: "Kalimat === 'string'?"}
 C@{shape: rectangle, label: "reverse = Null"}
 H@{shape: rectangle, label: "Looping Kalimat"}
 I@{shape: rectangle, label: "re-assign reverse = Kalimat "}
@@ -24,7 +25,8 @@ D@{shape: diamond, label: "Kalimat == reverse?"}
 E@{shape: lean-l, label: "Palindrom"}
 F@{shape: lean-l, label: "Bukan Palindrom"}
 G@{shape: dbl-circ, label: "Selesai"}
-A --> B
+A --> X
+X --> B
 B --> C
 C --> H
 H --> I
@@ -34,6 +36,7 @@ D --Salah--> F
 E --> G
 F --> G
 ```
+
 
 ## Algoritma Reverse Word
 
