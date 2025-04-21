@@ -20,8 +20,8 @@ flowchart TD
    I@{shape: rectangle, label: "Tampilkan keranjang" }
    J@{shape : diamond, label: "Apakah keranjang kosong?"}
    K@{shape : rectangle ,label: "⚠️ Keranjang kosong"}
-   L@{shape : lean-r , label :"Tampilkan keranjang & total" }
-   M@{shape: dbl-circ, label:"✅ Selesai & Tutup Aplikasi"}
+   L@{shape : lean-r , label : "Tampilkan keranjang & total" }
+   M@{shape: dbl-circ, label: "✅ Selesai & Tutup Aplikasi"}
     A --> B
     B --> C
     C --> D1
