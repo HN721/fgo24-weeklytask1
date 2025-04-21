@@ -27,7 +27,8 @@ F@{shape: lean-l, label: "Bukan Palindrom"}
 G@{shape: dbl-circ, label: "Selesai"}
 A --> X
 X --> B
-B --> C
+B --False--> X
+B --True--> C
 C --> H
 H --> I
 I --> D
