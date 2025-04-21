@@ -16,6 +16,7 @@
 flowchart TD
 
 A@{shape: circle , label: "Mulai"}
+H@{shape: lean-r ,label : "Input Kalimat" }
 B@{shape: lean-r, label: "Kalimat === 'string'?"}
 C@{shape: rectangle, label: "reverse = Null"}
 H@{shape: rectangle, label: "Looping Kalimat"}
@@ -24,7 +25,8 @@ D@{shape: diamond, label: "Kalimat == reverse?"}
 E@{shape: lean-l, label: "Palindrom"}
 F@{shape: lean-l, label: "Bukan Palindrom"}
 G@{shape: dbl-circ, label: "Selesai"}
-A --> B
+A --> H
+H --> B
 B --False--> A
 B --True--> C
 C --> H
