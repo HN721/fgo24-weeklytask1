@@ -32,24 +32,6 @@ const rl = readline.createInterface({
 
 let cart = [];
 
-function showCart() {
-  if (cart.length === 0) {
-    console.log("\n🛒 Keranjang kamu masih kosong.");
-    return;
-  }
-
-  console.log("\n🧾 Keranjang Pesanan:");
-  let total = 0;
-  for (let i = 0; i < cart.length; i++) {
-    const item = cart[i];
-    console.log(
-      `${i + 1}. ${item.name} x${item.quantity} = Rp ${item.subtotal}`
-    );
-    total += item.subtotal;
-  }
-  console.log(`\n💰 Total Bayar: Rp ${total}`);
-}
-
 function showCategories() {
   console.log("\n📋 Menu Kategori:");
   for (let i = 0; i < menu.length; i++) {
@@ -147,6 +129,22 @@ function checkout() {
   console.log("\n🙏 Terima kasih telah memesan di HoseaCafe!");
   rl.close();
 }
+function showCart() {
+  if (cart.length === 0) {
+    console.log("\n🛒 Keranjang kamu masih kosong.");
+    return;
+  }
 
+  console.log("\n🧾 Keranjang Pesanan:");
+  let total = 0;
+  for (let i = 0; i < cart.length; i++) {
+    const item = cart[i];
+    console.log(
+      `${i + 1}. ${item.name} x${item.quantity} = Rp ${item.subtotal}`
+    );
+    total += item.subtotal;
+  }
+  console.log(`\n💰 Total Bayar: Rp ${total}`);
+}
 console.log("📢 Selamat datang di HoseaCafe!");
 showCategories();
